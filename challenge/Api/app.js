@@ -5,7 +5,6 @@ const app = express();
 app.use(express.json());
 
 const BASE_URL = 'https://api.github.com/orgs/takenet';
-const PORT = 3001;
 
 app.get('/', async (_req, res) => {
   try {
@@ -32,6 +31,4 @@ app.get('/', async (_req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`listening on port ${PORT}`);
-});
+module.exports = app;
