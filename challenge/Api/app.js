@@ -24,7 +24,7 @@ app.get('/', async (_req, res) => {
 
     const reposFilteredByLanguage = reposFilter('C#', 5);
 
-    res.status(200).json(reposFilteredByLanguage);
+    res.status(200).json({ ...reposFilteredByLanguage });
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: error.message });
