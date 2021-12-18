@@ -33,5 +33,5 @@ app.get('/', async (_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`listen port ${PORT}`);
+  console.log(`listening on port ${PORT}`);
 });
